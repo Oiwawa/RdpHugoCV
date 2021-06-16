@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <link rel="shortcut icon" href="media/fujiicon.png">
+    <link rel="stylesheet" href="/Countdown/style.css">
+</head>
+<body>
+    <div class="container" >
+        <h1 id="headline">Countdown to ...</h1>
+        <div id="countdown">
+            <ul>
+                <li><span id="days"></span>days</li>
+                <li><span id="hours"></span>Hours</li>
+                <li><span id="minutes"></span>Minutes</li>
+                <li><span id="seconds"></span>Seconds</li>
+            </ul>
+        </div>
+        <a href="../index.html" id="close">Back</a> 
+        <div class="message">
+            <div id="content">
+                <span class="emoji"><img draggable="false" role="img" class="emoji" alt="🥳" src="https://s.w.org/images/core/emoji/13.0.1/svg/1f973.svg"></span>
+                <span class="emoji"><img draggable="false" role="img" class="emoji" alt="🎉" src="https://s.w.org/images/core/emoji/13.0.1/svg/1f389.svg"></span>
+                <span class="emoji"><img draggable="false" role="img" class="emoji" alt="🎂" src="https://s.w.org/images/core/emoji/13.0.1/svg/1f382.svg"></span>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        //Countdown function
+        (function () {
+            //Setting all const based on seconds
+            const second = 1000,
+            minute = second * 60,
+            hour = minute * 60,
+            day = hour * 24;
+            
+            //Setting end date
+            let endDate = "Aug 15, 2022 00:00:00",
+            countDown = new Date(endDate).getTime(),
+            //Interval to execute the code
+            x = setInterval(function () {
+                let now = new Date().getTime(),
+                distance = countDown - now;
+                //Sets the countdown display, counting the distance left with the end date to now
+                (document.getElementById("days").innerText = Math.floor(distance / day)),
+                (document.getElementById("hours").innerText= Math.floor((distance % day) / hour)),
+                (document.getElementById("minutes").innerText = Math.floor((distance % hour) / minute)),
+                (document.getElementById("seconds").innerText = Math.floor((distance % minute) / second));
+
+                //End condition
+                if (distance < 0) {
+                    let headline = document.getElementById("headline");
+                    headline = document.getElementById("headline").headline.innerText = "I have time to set up what is going to happen here, hi by the way :) ";
+                    //Stops the countdown
+                    clearInterval(x);
+                }
+            }, 0);
+        })();
+
+        //Close current tab
+        (document.getElementById("close").addEventListener("click", function() {
+            // Close in direct response to a user action
+            console.log("Calling window.close");
+            window.close();
+            console.log("Done calling window.close");
+        }, false));
+    </script>
+</body>
+</html>

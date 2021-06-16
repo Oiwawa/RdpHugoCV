@@ -81,73 +81,6 @@ header {
     text-shadow: 0 0 20px #FB8122, 0 0 30px #FB8122, 0 0 40px #FB8122, 0 0 50px #FB8122, 0 0 60px #FB8122, 0 0 70px #FB8122, 0 0 80px #FB8122, 0 1 90px #FB8122;
   }
 }
-/* ********************** NAME ********************** */
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
-.name {
-  font-family: 'Poppins', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.ulul {
-  position: relative;
-  display: flex;
-}
-
-.ulul li {
-  list-style: none;
-}
-
-.ulul label {
-  position: relative;
-}
-
-input[type="checkbox"] {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 80px;
-  width: 80px;
-  z-index: 100;
-}
-
-.ulul div {
-  position: relative;
-  height: 80px;
-  width: 80px;
-  background: #1D2228;
-  color: #555;
-  display: flex;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 46px;
-  cursor: pointer;
-  margin: 0 4px;
-  border-radius: 20px;
-  box-shadow: -1px -1px 4px rgba(255, 255, 255, 0.05),
-    4px 4px 6px rgba(0, 0, 0, 0.2),
-    inset -1px -1px 4px rgba(255, 255, 255, 0.05),
-    inset 1px 1px 1px rgba(0, 0, 0, 0.1);
-}
-
-input[type="checkbox"]:checked ~ div {
-  box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.05),
-    inset 4px 4px 6px rgba(0, 0, 0, 0.2);
-  color: yellow;
-  text-shadow: 0 0 15px yellow, 0 0 25px yellow;
-  animation: glow 5s linear infinite;
-}
-
-@keyframes glow {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-  100% {
-    filter: hue-rotate(360deg);
-  }
-} */
-
 
 h1 {
     padding: 90px 0 10px 0;
@@ -180,7 +113,9 @@ h2{
     justify-content: space-between;
     padding: 40px 0;
 }
-
+.infos .typed {
+    font-size: 1.5em;
+}
 .photo {
     border: 2px solid #FB8122;
     position: relative;
@@ -201,7 +136,7 @@ h2{
 
 header .button {
     margin-top: 15%;
-    margin-bottom: 15%;
+    margin-botom: 15%;
 }
 
 header .button a {
@@ -232,6 +167,10 @@ header .button:hover a {
 #langages .bar {
     padding: 10px 0 4px;
     letter-spacing: 0.1em;
+    font-size: 2em;
+}
+#langages img {
+    width: 36px;
 }
 
 /* ********************** FORMATIONS ********************** */
@@ -369,10 +308,10 @@ header .button:hover a {
 .projet {
     display: flex;
 }
-/* A AJOUTER SI PLUSIEURS PROJETS*/
-/* .projet:nth-child(2) {
-    margin-left: 3%;
-} */
+
+.projet:nth-child(2) {
+    margin-left: 5%;
+}
 
 .cadre {
     position: relative;
@@ -520,7 +459,11 @@ header .button:hover a {
     font-size: 2em;
     text-transform: uppercase;
 }
-
+.cloud span {
+    font-size: 1.3em ; 
+    color: #FB8122;
+    text-shadow: 1px 1px 0 #FB8122;
+}
 /* ********************** HOBBIES ********************** */
 
 #hobbies {
@@ -537,23 +480,29 @@ header .button:hover a {
 }
 
 .pictures {
+    margin-top: 50px;
     display: flex;
     justify-content: center;
+}
+.flip-box{
+    margin: 0 auto;
+
 }
 
 .flip-box-back div {
     margin: 0 auto;
     text-orientation: upright;
+    text-align: center;
 }
 
 .flip-box-back p {
     text-transform: uppercase;
-    padding: 10px;
+    padding: 20px;
     font-size-adjust: auto;
 }
 
 .flip-box-back {
-    color: #E1E2E2;
+    color: 1.3em;
     transform: rotateY(180deg);
 }
 
@@ -573,7 +522,6 @@ header .button:hover a {
     perspective: 300px;
     background-color: #FB8122;
     border: 1px solid #FB8122;
-padding: 5px;
 }
 
 .flip-box-inner {
@@ -797,9 +745,11 @@ footer p {
       width: 300px;
     }
   }
+
   @media screen and (max-width: 520px) {
     h1 {
       padding-top: 20px;
+      font-size: 2em !important;
     }
     h3 {
       font-size: 1em !important;
@@ -807,12 +757,38 @@ footer p {
     #fcc, #occ {
       padding: 50px 0 0 0;
     }
+    .projet {
+        display: block;
+    }
+    .cadre {
+        position: relative;
+        padding: 0;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: #E1E2E2;
+        text-align: center;
+    }
     .projet:nth-child(2), .projet:nth-child(3) {
       margin-left: 0;
     }
-    .legende {
+    .legend {
       opacity: 1;
+      padding: 0;
     }
+    .cadre {
+        position: relative;
+        padding: 0;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: #E1E2E2;
+        text-align: center;
+    }
+
+    .legende p {
+        display: none;
+      }
     #other-skills {
       display: none;
     }
