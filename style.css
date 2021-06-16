@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Josefin+Sans:wght@100&family=Rambla&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Mono&display=swap');
 html {
     scroll-behavior: smooth;
 }
@@ -7,11 +7,11 @@ html {
 body {
     color: #E1E2E2 !important;
     background-color: #1D2228 !important;
-    font-family: 'Rambla', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 h2, h3 {
-    font-family: 'Audiowide', sans-serif;
+    font-family: 'Roboto Mono', sans-serif;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     text-shadow: -1px -1px -1px #283655;
@@ -553,7 +553,7 @@ footer h3{
 .footer-icons {
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     max-width: 60%;
 }
 
