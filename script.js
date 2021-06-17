@@ -16,8 +16,8 @@ AOS.init();
 
 // TYPED
 var typed = new Typed('.typed', {
-    strings: ['Jeune Développeur Web à la recherche d\'une alternance Full-Stack'],
-    typeSpeed: 10,
+    strings: ['Jeune Développeur Web à la recherche d\'une alternance Full-Stack \n Ancien étudiant en Anglais, je me suis reconverti dans le développement web avec l\'ENI Ecole Informatique. Actuellement en stage chez Accenture Nantes, je recherche une entrepise où effectuer la suite de ma formation en alternance. Je suis investi dans mon travail, rigoureux, très marrant (modeste? non), j\'ai pour ambition de participer à la création de projet inclusif et respectueux de l\'environnement.'],
+    typeSpeed: 0,
     backSpeed: 0,
 });
 
