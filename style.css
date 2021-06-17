@@ -136,7 +136,7 @@ h2{
 
 header .button {
     margin-top: 15%;
-    margin-botom: 15%;
+    margin-bottom: 15%;
 }
 
 header .button a {
@@ -590,7 +590,11 @@ input{
     color: #E1E2E2;
     border: solid 1px #FB8122;  
     border-bottom: none;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#email {
+    border-radius: 0%;
 }
 textarea{
     width: 470px;
@@ -602,7 +606,8 @@ textarea{
     color: #E1E2E2;
     border: solid 1px #FB8122;
     resize: none !important;
-    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 input::placeholder, textarea::placeholder,
 input:focus::placeholder, textarea:focus::placeholder{
@@ -749,16 +754,26 @@ footer p {
   @media screen and (max-width: 520px) {
     h1 {
       padding-top: 20px;
+      margin-top: -30px;
       font-size: 2em !important;
     }
     h3 {
-      font-size: 1em !important;
+      font-size: 1.3em !important;
     }
     #fcc, #occ {
       padding: 50px 0 0 0;
     }
     .projet {
         display: block;
+    }
+
+    #formations {
+        padding: 20px 10px 10px 10px;
+        width: 300px;
+    }
+
+    #portfolio {
+        height: 1200px ;
     }
     .cadre {
         position: relative;
@@ -768,6 +783,7 @@ footer p {
         background-color: transparent;
         color: #E1E2E2;
         text-align: center;
+        overflow: visible;
     }
     .projet:nth-child(2), .projet:nth-child(3) {
       margin-left: 0;
@@ -793,7 +809,9 @@ footer p {
       display: none;
     }
     #hobbies {
-      margin-top: -30px;
+      margin-top: -10px;
+      border-top: 1px solid #FB8122;
+
     }
     .flip-box-back p {
       font-size: 0.7em;
