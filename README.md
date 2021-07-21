@@ -1,6 +1,5 @@
 # CV---RADEPONT-Hugo
-
-Salutations aux braves qui liront ceci, je m'appelle Hugo et voici mon site web.
+Hello, je m'appelle Hugo et voici mon site web.
 Réalisé avec HTML, CSS, et un peu de Javascript pour: le texte mode terminal du début du site, avec la librairie Typed,
 plusieurs éléments avec des effets d'apparitions, avec la librairie AOS
 
