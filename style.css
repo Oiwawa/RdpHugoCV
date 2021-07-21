@@ -444,7 +444,6 @@ header .button:hover a {
     padding: 50px 100px 100px 100px;
     width: 100%;
     background-color: #1D2228;
-    border-top: 3px solid #FB8122;
 }
 
 #other-skills h3 {
@@ -809,6 +808,10 @@ footer p {
   }
 
   @media screen and (max-width: 520px) {
+
+    header {
+        height: 53b;
+    }
     h1 {
       padding-top: 20px;
       margin-top: -30px;
@@ -826,7 +829,8 @@ footer p {
 
     #formations {
         padding: 20px 10px 10px 10px;
-        /* width: auto; */
+        width: 80% !important;
+        
     }
 
     #portfolio {
@@ -866,8 +870,15 @@ footer p {
         display: none;
       }
     #other-skills {
-      display: none;
+      display: block;
+      font-size: 0.8em;
+      letter-spacing: 5px;
+      margin: 0 auto !important;
     }
+    #other-skills .aos-item{
+        margin: 20px auto;
+    }
+    
     #hobbies {
       margin-top: -10px;
       border-top: 1px solid #FB8122;
