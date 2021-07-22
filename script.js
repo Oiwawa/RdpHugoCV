@@ -49,3 +49,7 @@ $(window).scroll(function(){
         compteur = 1;
     }
 });
+
+document.getElementById("mangaListLink").addEventListener('click', function() {
+    this.alert("Ce site web sera bientôt disponible, mais il faut patienter encore un peu ! :)")
+});
