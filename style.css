@@ -711,7 +711,30 @@ footer p {
 
 
 /********************* MEDIA QUERIES **********************/
+@media screen and (max-width: 1600px){
+
+    header {
+        
+    }
+
+    #langages {
+        margin: 11% 20px 0 6% ;
+    }
+    
+    #formations {
+        margin: 0 2% 0 6%;
+    }
+}
+
 @media screen and (max-width: 1400px){
+    header {
+        height: 60vh;
+    }
+
+    header .button {
+        margin-top: 30%;
+    }
+
     #langages {
         margin:25% 20px 0 6%;
     }
@@ -722,6 +745,15 @@ footer p {
 }
 
 @media screen and (max-width: 1040px){
+
+    header {
+        height: 80vh;
+    }
+
+    header .button {
+        margin-top: 30%;
+    }
+
     #langages {
         margin: 34% 0 0 6%;
     }
@@ -741,6 +773,10 @@ footer p {
         font-size: 0.9em;
     }
     
+    header .button {
+        margin-top: 30%;
+    }
+
     #langages {
         margin-left: 1%;
     }
