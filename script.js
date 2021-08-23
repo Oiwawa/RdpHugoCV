@@ -16,8 +16,8 @@ AOS.init();
 
 // TYPED
 var typed = new Typed('.typed', {
-    strings: ['Jeune Développeur Web à la recherche d\'une alternance Full-Stack \n Ancien étudiant en Anglais, je me suis reconverti dans le développement web avec l\'ENI Ecole Informatique. Actuellement en stage chez Accenture Nantes, je recherche une entrepise où effectuer la suite de ma formation en alternance. Je suis investi dans mon travail, rigoureux, très marrant (modeste? Non), j\'ai pour ambition de participer à la création de projets inclusifs et respectueux de l\'environnement.'],
-    typeSpeed: 0,
+    strings: ['Jeune Développeur Web à la recherche d\'une alternance, ce site sert à vous montrer que je suis bien plus que ça. Die-hard fan de mangas, volleyball, d\'anglais. Je passe le plus clair de mon temps à découvrir ce qu\'Internet à de plus beau à m\'offrir. Les jeux vidéos? De pinball 3-D à 4 ans, à World of Warcraft toute mon adolescence, en passant par Minecraft et Rocket League. L\'esport ? Evidémment! A défaut d\'être un sportif je soutiens mes équipes League of Legends préférées à chaque match (#FNCWIN) ! Et le petit nouveau, le développement. Arrivé de nulle part et pourtant sous mes yeux depuis toujours, je ne me vois pas évoluer dans un monde différent que celui là. La douleur des échecs, la joie de la résolution d\'un bug, les heures de recherches sur des forums tous plus sombre les uns que les autres. Tout cela me passionne et me fait aimer ce métier de plus en plus à chaque fois. '],
+    typeSpeed: 20,
     backSpeed: 0,
 });
 

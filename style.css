@@ -158,10 +158,10 @@ header .button:hover a {
 
 /* ********************** LANGAGES ********************** */
 #langages {
-    padding: 100px 80px 80px 50px;
+    padding: 100px 0px 80px 50px;
     margin: 5% 0 0 6%;
-    height: 620px;
-    width: 46%;
+    height: 580px;
+    width: 40%;
     max-width: 640px;
     min-width: 300px;
     border: 2px solid #FB8122 ;    
@@ -189,12 +189,16 @@ header .button:hover a {
     border: 2px solid #FB8122 ;    
 }
 
-#autodidacte {
+#EPSI {
     padding-top: 20px;
 }
 
+#autodidacte {
+    padding: 50px 0 0 3%;
+}
+    
 #eni-ecole-informatique {
-    padding: 50px 0 0 9%;
+    padding: 50px 0 0 6%;
 }
 
 #formation h4 {
