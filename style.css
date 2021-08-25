@@ -23,7 +23,6 @@ li {
 /* ********************** HEADER ********************** */
 .navbar {
     background-color: #FB8122;
-    opacity: 0.9;
     height: 42px;
     transition: 0.7s;
 }
@@ -35,14 +34,14 @@ li {
 }
 
 .nav-link {
-    color: #E1E2E2 !important;
+    color: #FFF !important;
     font-size: 1.2em;
     text-transform: uppercase;
 }
 
 header {
     text-align: center;
-    height: 100vh;
+    height: 100%;
     background-size: cover;
 }
 
@@ -56,12 +55,11 @@ header {
 }
 
 .neons {
-    margin-top: 10rem;
+    margin-top: 60px;
     text-align: center;
 }
 
 .neons h1 {
-    font-size: 8rem;
     text-align: center;
     font-weight: bold;
     -webkit-animation: glow 2s ease-in-out infinite alternate;
@@ -84,7 +82,7 @@ header {
 h1 {
     padding: 90px 0 10px 0;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 4.3em;
+    font-size: 5em;
     text-transform: uppercase;
 }
 
@@ -118,6 +116,11 @@ h2{
 .infos .typed {
     font-size: 1.5em;
 }
+
+#text-intro {
+    padding: 0 3%;
+}
+
 
 .photo {
     border: 2px solid #FB8122;
@@ -179,10 +182,9 @@ header .button:hover a {
 
 /* ********************** FORMATIONS ********************** */
 #formations {
-    position: relative;
     top: -200px;
     float: right;
-    margin: 0 6% 0 6%;
+    margin: 0 6%;
     padding: 110px 0 60px 50px;
     width: 45%;
     max-width: 650px;
@@ -233,8 +235,8 @@ header .button:hover a {
 /* ********************** PARCOURS ********************** */
 #parcours {
     max-width: 800px;
-    margin: 640px auto 180px auto;
-    padding: 40px 30px 100px 30px;
+    margin: 780px auto 180px;
+    padding: 40px 30px 100px;
     background-size: cover;
     border-radius: 8px;
     /* box-shadow: -1px -1px 8px #FB8122; */
@@ -713,12 +715,9 @@ footer p {
 /********************* MEDIA QUERIES **********************/
 @media screen and (max-width: 1600px){
 
-    header {
-        
-    }
 
     #langages {
-        margin: 11% 20px 0 6% ;
+        margin: 0 20px 0 6%;
     }
     
     #formations {
@@ -727,16 +726,14 @@ footer p {
 }
 
 @media screen and (max-width: 1400px){
-    header {
-        height: 60vh;
-    }
+
 
     header .button {
-        margin-top: 30%;
+        margin-top: 200px;
     }
 
     #langages {
-        margin:25% 20px 0 6%;
+        margin: 100px 20px 0 6%;
     }
     
     #formations {
@@ -746,16 +743,16 @@ footer p {
 
 @media screen and (max-width: 1040px){
 
-    header {
-        height: 80vh;
+    h1 {
+        font-size: 4.5em;
     }
 
     header .button {
-        margin-top: 30%;
+        margin-top: 250px;
     }
 
     #langages {
-        margin: 34% 0 0 6%;
+        margin: 90px 0 0 6%;
     }
     
     .flip-box {
@@ -768,16 +765,17 @@ footer p {
     }
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 990px){
     .infos h5, .typed {
         font-size: 0.9em;
     }
     
     header .button {
-        margin-top: 30%;
+        margin-top: 250px;
     }
 
     #langages {
+        margin: 70px 0 0 6%;
         margin-left: 1%;
     }
     
@@ -820,18 +818,46 @@ footer p {
     .fixed-top {
         position: unset !important;
     }
+
+    .neons {
+        margin-top: 2%;
+    }
     
-    h1, h2 {
-        font-size: 2em;
+    h1 {
+        font-size: 53px !important;
+    }
+
+    h2 {
+        font-size: 2em !important;
+    }
+
+    .presentation {
+        justify-content: center;
+    }
+
+    #text-intro {
+        width: 100%;
+        position: absolute;
+        margin: 280px 0 0;
+        padding: 0 10%;
+        width: 100%;
+    }
+
+    .typed {
+        font-size: 15px;
+    }
+
+    #btn-cv  {
+        margin-top: 460px;
     }
     
     #langages {
         width: 80%;
-        margin-left: 10%;
+        margin: 80px 10% 0;
     }
     
     #formations {
-        margin: 210px 0 0 10%;
+        margin: 50px auto 0;
         width: 80%;
         float: none;
         display: block;
@@ -846,7 +872,11 @@ footer p {
     }
     
     #parcours {
-        margin-top: -50px
+        margin: 50px 25px 180px;
+    }
+
+    .timeline {
+        padding: 15px;
     }
     
     .legende p {
@@ -879,19 +909,41 @@ footer p {
     }
 }
 
-@media screen and (max-width: 520px) {
-    header {
-        height: 53vh;
-    }
+@media screen and (max-width: 560px) {
+
     
     h1 {
         padding-top: 20px;
         margin-top: -30px;
         font-size: 2em !important;
     }
+
+    .neons {
+        margin-top: 10%;
+    }
+
+    h2 {
+        font-size: 1.5em !important;
+    }
+
+    #web-dev {
+        padding: 20px 0;
+    }
     
     h3 {
         font-size: 1.3em !important;
+    }
+
+    .typed {
+        font-size: 12px;
+    }
+
+    #btn-cv {
+        margin-top: 400px;
+    }
+
+    #langages {
+        margin: 85px 10% 0;
     }
     
     #fcc, #occ {
@@ -903,8 +955,8 @@ footer p {
     }
     
     #formations {
-        padding: 20px 10px 10px 10px;
-        width: 80% !important;
+        padding: 20px 10px 10px;
+        width: 84% !important;
     }
     
     #portfolio {
@@ -966,4 +1018,63 @@ footer p {
     .flip-box-back p {
         font-size: 14px;
     }
+}
+
+@media screen and (max-width: 430px) { 
+
+    #btn-cv {
+        margin-top: 500px;
+    }
+
+    #langages {
+        margin: 70px 10% 0;
+    }
+
+}
+
+@media screen and (max-width: 320px) { 
+
+    h1 {
+        font-size: 30px !important;
+    }
+
+    h3 {
+        font-size: 20px !important;
+    }
+
+    h4 {
+        font-size: 20px !important;
+    }
+
+    #btn-cv {
+        margin-top: 570px;
+    }
+
+    #langages {
+        height: 405px;
+        min-width: 80%;
+        margin: 100px 10% 0;
+        padding: 50px 0 50px 50px;
+    }
+
+    .bar {
+        font-size: 20px !important;
+    }
+
+    .data {
+        font-size: 12px;
+    }
+
+    #parcours {
+        margin: 50px 15px 180px;
+    }
+
+    .timeline {
+        padding: 12px;
+    }
+
+    #hobbies {
+        padding: 100px 20px;
+    }
+
 }
