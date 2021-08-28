@@ -325,6 +325,9 @@ header .button:hover a {
 .projet:nth-child(2) {
     margin-left: 5%;
 }
+.projet:nth-child(3) {
+    margin-left: 10%;
+}
 
 .cadre {
     position: relative;

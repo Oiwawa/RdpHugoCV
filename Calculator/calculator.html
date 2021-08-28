@@ -8,7 +8,8 @@
     <link href="style.css" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
-<body>
+<body>  
+    <a href="../index.html" id="close">Back</a>
     <div class="calculator-grid">
         <div class="output">
             <div data-previous-operand class="previous-operand"></div>
@@ -33,5 +34,11 @@
         <button data-number>0</button>
         <button data-equals class="span-two">=</button>
     </div>
+
+    <script>
+        (document.getElementById('close').addEventListener('click', function() {
+            document.close
+        }, false));
+    </script>
 </body>
 </html>
