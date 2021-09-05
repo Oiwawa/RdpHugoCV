@@ -931,7 +931,7 @@ footer p {
     }
 
     #web-dev {
-        padding: 20px 0;
+        padding: 20px 0;##
     }
     
     h3 {
@@ -964,7 +964,7 @@ footer p {
     }
     
     #portfolio {
-        height: 1200px ;
+        height: 1525px ;
     }
     
     .cadre {
@@ -1071,6 +1071,10 @@ footer p {
 
     #parcours {
         margin: 50px 15px 180px;
+    }
+
+    #portfolio {
+        height: 1610px;
     }
 
     .timeline {
