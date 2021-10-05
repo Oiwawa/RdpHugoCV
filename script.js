@@ -16,7 +16,7 @@ AOS.init();
 
 // TYPED
 var typed = new Typed('.typed', {
-    strings: ['Jeune Développeur Web à la recherche d\'une alternance, ce site sert à vous montrer que je suis bien plus que ça. <br> <br> Enorme fan de mangas, de volleyball, d\'anglais. <br> Je passe mon temps à découvrir ce qu\'Internet à de plus beau à m\'offrir. <br> Les jeux vidéos? De pinball 3-D à 4 ans, à World of Warcraft toute mon adolescence, en passant par Minecraft et Rocket League. <br> Et l\'Esport ? Evidémment! A défaut d\'être un grand joueur, je soutiens mes équipes League of Legends préférées à chaque match (#FNCWIN) ! <br> <br> Et le petit nouveau, le développement. Arrivé de nulle part et pourtant sous mes yeux depuis toujours, je ne me vois pas évoluer dans un monde différent que celui-ci.'],
+    strings: ['Jeune Développeur Web en alternance à Benevolt, ce site sert à vous montrer que je suis bien plus que ça. <br> <br> Énorme fan de mangas, de volleyball, d\'anglais. <br> Je passe mon temps à découvrir ce qu\'Internet à de plus beau à m\'offrir. <br> Les jeux vidéos? De pinball 3-D à 4 ans, à World of Warcraft toute mon adolescence, en passant par Minecraft et Rocket League. <br> Et l\'Esport ? Evidémment! A défaut d\'être un grand joueur, je soutiens mes équipes League of Legends préférées à chaque match (#FNCWIN) ! <br> <br> Et le petit nouveau, le développement. Arrivé de nulle part et pourtant sous mes yeux depuis toujours, je ne me vois pas évoluer dans un monde différent que celui-ci.'],
     typeSpeed: 20,
     backSpeed: 0,
 });
