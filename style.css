@@ -167,17 +167,22 @@ header .button:hover a {
     width: 40%;
     max-width: 640px;
     min-width: 300px;
-    border: 2px solid #FB8122 ;    
+    border: 2px solid #FB8122;    
+}
+
+#langages h3 {
+    font-size: 2em;
+    padding-bottom: 1%;
 }
 
 #langages .bar {
-    padding: 10px 0 4px;
+    padding: 10px 0 20px;
     letter-spacing: 0.1em;
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 #langages img {
-    width: 36px;
+    width: 64px;
 }
 
 /* ********************** FORMATIONS ********************** */
