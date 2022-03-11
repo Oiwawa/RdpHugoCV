@@ -222,11 +222,11 @@ header .button:hover a {
 }
 
 .data {
-    border: 1px solid #FB8122;
+  border: 1px solid #FB8122;
     width: 170px;
-    margin: 0 4%;
-    box-shadow: 0 0 8px #826a58;
-    padding: 5px 20px;
+    margin: 2px 4%;
+    /* box-shadow: 0 0 8px #826a58; */
+    padding: 3px 20px;
 }
 
 .counter-value {
@@ -266,7 +266,8 @@ header .button:hover a {
 }
 
 #parcours p {
-    line-height: 1.9em;
+    line-height: 2.2em;
+    font-size: 1.1em;
 }
 
 .timeline{
@@ -474,17 +475,19 @@ header .button:hover a {
     color: #E1E2E2;
 }
 
-.cloud {
-    text-align: center;
-    padding: 50px 0;
-    font-size: 2em;
-    text-transform: uppercase;
+.skills {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
 }
 
-.cloud span {
-    font-size: 1.3em ; 
-    color: #FB8122;
-    text-shadow: 1px 1px 0 #FB8122;
+
+.skill-icon p {
+    font-size: 2.3em;
+    color: #E1E2E2;
+    justify-content: center;
+    display: flex;
+    padding-top: 50px;
 }
 
 /* ********************** HOBBIES ********************** */
@@ -506,9 +509,8 @@ header .button:hover a {
     justify-content: center;
 }
 
-.flip-box{
+.flip-box {
     margin: 0 auto;
-    
 }
 
 .flip-box-front img {
