@@ -121,25 +121,6 @@ h2{
     padding: 0 3%;
 }
 
-
-.photo {
-    border: 2px solid #FB8122;
-    position: relative; 
-}
-
-.photo img {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    height: auto;
-    max-width: 90%;
-    border-radius: 3px;
-    box-shadow: 0 0 4px #111;
-}
-
 header .button {
     margin-top: 15%;
     margin-bottom: 15%;
@@ -331,8 +312,12 @@ header .button:hover a {
 .projet:nth-child(2) {
     margin-left: 5%;
 }
+
 .projet:nth-child(3) {
     margin-left: 10%;
+}
+.projet:nth-child(4) {
+    margin-left: 15%;
 }
 
 .cadre {
@@ -384,23 +369,6 @@ header .button:hover a {
     z-index: -1;
 }
 
-/* .cadre:before {
-    top: 15px;
-    left: 0;
-    border-bottom-color: transparent;
-    border-right-color: transparent;
-}
-
-.cadre:after {
-    border-top-color: transparent;
-    border-left-color: transparent;
-}
-
-.cadre:hover:before, .cadre:hover:after {
-    border-color: #aca49c;
-    width: 100%;
-    height: 100%;
-} */
 .legend {
     max-width: 350px;
     padding: 50px 0 0 20px;
@@ -413,7 +381,11 @@ header .button:hover a {
     transition: 1.5s ease;
 }
 
-.legend a {
+.legend .api {
+    color: #E1E2E2;
+}
+
+.legend a:not([name="api"]) {
     padding: 16px 10px 10px 10px;
     margin-top: 20px;
     font-size: 1.1em;
